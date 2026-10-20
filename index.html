@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RedlineMD · AI contract review for physicians</title>
+<meta name="description" content="RedlineMD reads the fine print of your physician employment contract. Every risky clause redlined in 24 hours, for a flat $199.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="header">
+  <div class="header-bar">
+    <a href="#top" class="logo"><img src="assets/logo.png" alt="RedlineMD, Medical Contract Review" width="166" height="44"></a>
+    <nav class="nav-desktop" aria-label="Sections">
+      <a href="#analysis">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#security">Security</a>
+    </nav>
+    <a href="#upload" class="btn btn-red header-cta">Get your Analysis</a>
+    <button type="button" class="menu-toggle" id="menuOpen" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <svg width="22" height="16" viewBox="0 0 22 16" fill="none" stroke="#8A8A8A" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M1 1h20M1 8h20M1 15h20"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#top" class="logo logo-menu"><img src="assets/logo.png" alt="RedlineMD, Medical Contract Review" width="152" height="40"></a>
+    <button type="button" class="menu-close" id="menuClose" aria-label="Close menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#8A8A8A" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M2 2l14 14M16 2L2 16"/></svg>
+    </button>
+    <nav aria-label="Sections (mobile)">
+      <a href="#analysis">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#security">Security</a>
+    </nav>
+    <a href="#upload" class="btn btn-red">Get your Analysis</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <h1>Your contract shouldn’t<br class="br-desk"> cost you your <em>next job.</em></h1>
+    <p class="hero-sub">Meet your AI companion for contract bureaucracy. RedlineMD reads the fine print, so you can focus on your <span class="red">patients</span>.</p>
+
+    <div class="hero-anim" id="heroAnim" aria-label="Illustrative animation: RedlineMD reading a contract and flagging risky clauses">
+      <div class="ha-doc">
+        <div class="ha-doc-head">
+          <div class="ha-doc-title">
+            <svg width="14" height="18" viewBox="0 0 14 18" aria-hidden="true"><path d="M9 0L0 10.5h5.5L4 18l10-11H8.2z" fill="#D7261E"/></svg>
+            <span class="ha-brand">RedlineMD</span>
+            <span class="ha-file">· Employment Agreement.pdf</span>
+          </div>
+          <span class="ha-status" data-ha="status">Reviewing…</span>
+        </div>
+        <div class="ha-rows" data-ha="rows">
+          <div class="ha-scan" data-ha="scan"></div>
+        </div>
+      </div>
+      <div class="ha-panel">
+        <span class="mono-label">MONEY SAVED</span>
+        <span class="ha-counter" data-ha="counter">$0</span>
+        <div class="ha-bar"><div data-ha="bar"></div></div>
+        <span class="ha-read" data-ha="read">Reading your contract… 0%</span>
+        <div class="ha-found" data-ha="found"></div>
+        <span class="ha-note">Illustrative example</span>
+      </div>
+    </div>
+
+    <!-- UPLOAD -->
+    <div id="upload" class="upload" data-upload>
+      <input type="file" class="sr-file" accept=".pdf,.doc,.docx,application/pdf" tabindex="-1" aria-hidden="true">
+      <div class="up-zone" data-step="idle">
+        <span class="up-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#D7261E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M12 17v-6M9.5 13.5L12 11l2.5 2.5"/></svg>
+        </span>
+        <div class="up-text">
+          <span class="up-title"><span class="only-desk">Drop</span><span class="only-mob">Upload</span> your contract and start redlining right now</span>
+          <span class="up-sub">PDF or Word, up to 30 pages. Encrypted the moment it lands.</span>
+        </div>
+        <div class="up-actions">
+          <button type="button" class="btn btn-red btn-lg" data-act="open">
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13V3M5.5 7.5L10 3l4.5 4.5M3.5 13v2.5a1.5 1.5 0 0 0 1.5 1.5h10a1.5 1.5 0 0 0 1.5-1.5V13"/></svg>
+            Upload contract
+          </button>
+          <button type="button" class="link-btn" data-act="sample">No file handy? Try a sample contract</button>
+        </div>
+      </div>
+      <div class="up-panel" data-step="file" hidden></div>
+      <div class="up-panel" data-step="done" hidden></div>
+    </div>
+  </section>
+
+  <!-- ANALYSIS -->
+  <section id="analysis" class="section analysis">
+    <h2 class="h2 center">Get the best analysis under 24 hours</h2>
+
+    <div class="compare" id="compare">
+      <div class="compare-inner">
+        <div class="cmp-progress" aria-hidden="true">
+          <span class="cmp-off">Without RedlineMD</span>
+          <span class="cmp-track"><span data-cmp="prog"></span></span>
+          <span class="cmp-on"><svg width="12" height="16" viewBox="0 0 14 18" aria-hidden="true"><path d="M9 0L0 10.5h5.5L4 18l10-11H8.2z" fill="#D7261E"/></svg>With RedlineMD</span>
+        </div>
+        <div class="cmp-toggle" role="group" aria-label="Compare">
+          <button type="button" data-cmp="without" aria-pressed="true">Without RedlineMD</button>
+          <button type="button" data-cmp="with" aria-pressed="false"><svg width="12" height="16" viewBox="0 0 14 18" aria-hidden="true"><path d="M9 0L0 10.5h5.5L4 18l10-11H8.2z" fill="#D7261E"/></svg>With RedlineMD</button>
+        </div>
+        <div class="cmp-card">
+          <div class="cmp-head">
+            <span>CLAUSE</span>
+            <span class="cmp-wide" data-cmp="hoff">WITHOUT REDLINEMD</span>
+            <span class="cmp-wide" data-cmp="hon">WITH REDLINEMD</span>
+          </div>
+          <div data-cmp="rows"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-dark">
+      <div class="cta-copy">
+        <p class="cta-big"><s>$500+ and two weeks.</s> <span class="coral">$199 and 24 hours.</span></p>
+        <p>Send your contract today. Get every risky clause redlined before you sign.</p>
+      </div>
+      <div class="cta-act">
+        <a href="#upload" class="btn btn-red btn-lg">Get your Analysis <span aria-hidden="true">→</span></a>
+        <span>Flat fee · Up to 30 pages · 3 reviews included</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section testimonials">
+    <h2 class="h2 center narrow">Hear from some of the 30,000+ doctors who already use RedlineMD</h2>
+    <div class="stories" id="stories"></div>
+  </section>
+
+  <!-- SAMPLE -->
+  <section id="sample" class="section sample">
+    <div class="sample-card">
+      <div class="sample-copy">
+        <h2 class="h2">See exactly what you’ll get.</h2>
+        <p>Every risky clause redlined, your financial exposure calculated, and the terms worth renegotiating, all in one report.</p>
+        <a href="https://drive.google.com/file/d/1Tkgo8HMq822U5ajoil6MlUDR917C6CVU/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-dark">See Sample Report →</a>
+      </div>
+      <div class="report" role="img" aria-label="Excerpt of a RedlineMD contract report">
+        <div class="rep-head">
+          <span class="rep-title"><svg width="11" height="14" viewBox="0 0 14 18" aria-hidden="true"><path d="M9 0L0 10.5h5.5L4 18l10-11H8.2z" fill="#D7261E"/></svg>Contract Report</span>
+          <span class="mono-sm">Employment Agreement · 24 pp.</span>
+        </div>
+        <div class="rep-stats">
+          <div class="st-warm"><div>Clauses flagged</div><b>9</b></div>
+          <div class="st-red"><div>Exposure</div><b>$9,400</b></div>
+          <div class="st-green"><div>To renegotiate</div><b>4</b></div>
+        </div>
+        <div class="rep-items">
+          <div class="rep-item">
+            <div class="rep-row"><span><span class="mono-sm">§4.2</span>  Tail coverage</span><span class="risk">High risk</span></div>
+            <span class="rep-text"><del>Physician shall procure tail coverage at own expense.</del> <ins>Employer shall procure tail coverage upon termination.</ins></span>
+          </div>
+          <div class="rep-item">
+            <div class="rep-row"><span><span class="mono-sm">§7.1</span>  Non-compete</span><span class="risk">High risk</span></div>
+            <span class="rep-text"><del>25-mile radius for 24 months.</del> <ins>10-mile radius for 12 months.</ins></span>
+          </div>
+        </div>
+        <span class="rep-note">Illustrative excerpt</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="features">
+    <div class="feat" id="feat">
+      <div class="feat-photo">
+        <img src="assets/corridor.jpg" alt="A nurse and a physician talking in a hospital corridor" loading="lazy">
+        <div class="feat-veil"></div>
+      </div>
+      <div class="feat-content">
+        <div class="feat-head">
+          <h2 class="h2">Your career, your terms.</h2>
+          <p>Everything you need to sign your next contract with confidence.</p>
+        </div>
+        <div class="feat-card" aria-live="polite">
+          <span class="feat-icon" data-feat="icon"></span>
+          <h3 data-feat="title"></h3>
+          <p data-feat="text"></p>
+          <div class="feat-timer" data-feat="timer"></div>
+        </div>
+        <div class="feat-nav">
+          <button type="button" class="circle" data-feat="prev" aria-label="Previous"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#14161A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4L6 9l5 5"/></svg></button>
+          <button type="button" class="circle circle-dark" data-feat="next" aria-label="Next"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4l5 5-5 5"/></svg></button>
+          <div class="dots" data-feat="dots"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap-1000">
+      <div class="cta-red">
+        <div class="cta-copy">
+          <h3>30 pages. One flat price.</h3>
+          <p>We analyze up to 30 pages of terms for $199, with your full report back within 24 hours.</p>
+        </div>
+        <div class="cta-red-act">
+          <span class="price">$199</span>
+          <a href="#upload" class="btn btn-white">Get your Analysis</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECURITY -->
+  <section id="security" class="section security">
+    <div class="trust" id="trust">
+      <div class="trust-copy">
+        <h2 class="h2 white">Your contract stays <u>between us</u>.</h2>
+        <p>Your employment agreement holds your salary, your personal data and your next career move. We handle it with the same care you give your patients’ records.</p>
+      </div>
+      <div class="trust-box">
+        <div class="trust-tabs" role="tablist" aria-label="What happens to your contract"></div>
+        <div class="trust-stage" role="tabpanel">
+          <div class="ts" data-ts="0">
+            <div class="ts-visual">
+              <div class="doc"><span class="l1"></span><span></span><span class="w90"></span><span class="w70"></span><small>$ salary</small></div>
+              <svg width="56" height="16" viewBox="0 0 56 16" fill="none" stroke="#9A9A9A" stroke-width="1.5" aria-hidden="true"><path d="M0 8h50" stroke-dasharray="4 4"/><path d="M46 3l6 5-6 5"/></svg>
+              <div class="doc doc-lock"><span class="cipher" data-ts="cipher">x9#fQ2!kLp0@Zt7$wR4^mN8&amp;cV1*hB6</span><div class="lock"><svg width="20" height="22" viewBox="0 0 20 22" fill="none" aria-hidden="true"><rect x="3" y="10" width="14" height="10" rx="2" fill="#FFFFFF"/><path data-ts="shackle" d="M6 10V7a4 4 0 0 1 8 0v3" stroke="#FFFFFF" stroke-width="2"/></svg></div></div>
+            </div>
+            <div class="ts-copy"><b>Locked the moment you upload.</b><span>Your contract is encrypted from upload to report, so it’s unreadable to anyone without access.</span></div>
+          </div>
+          <div class="ts" data-ts="1" hidden>
+            <div class="ts-visual gap0">
+              <div class="who"><span class="avatar-you">You</span><small>Full access</small></div>
+              <span class="line-green"></span>
+              <div class="doc doc-sm"><span class="l1"></span><span></span><span class="w70"></span></div>
+              <div class="line-block"><span data-ts="block"><svg width="10" height="10" viewBox="0 0 10 10" stroke="#D7261E" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M1.5 1.5l7 7M8.5 1.5l-7 7"/></svg></span></div>
+              <div class="who faded"><span class="avatar-emp"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#4A4F57" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="14" height="10" rx="1"/><path d="M7 7V4h6v3"/></svg></span><small>Your employer</small></div>
+            </div>
+            <div class="ts-copy"><b>Only you and RedlineMD.</b><span>We never share your contract or your report with your employer, recruiters or anyone else.</span></div>
+          </div>
+          <div class="ts" data-ts="2" hidden>
+            <div class="ts-visual">
+              <div class="shred" data-ts="shred"><div class="shred-ok" hidden><span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#2A7454" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 10.5l3.5 3.5 7.5-8"/></svg></span></div></div>
+              <button type="button" class="shred-btn" data-ts="del"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h12M8 6V4h4v2M6 6l1 11h6l1-11"/></svg>Delete my files</button>
+              <button type="button" class="restore-btn" data-ts="restore" hidden>Deleted for good · try again</button>
+            </div>
+            <div class="ts-copy"><b>Gone when you say so.</b><span>Delete your contract and report anytime, in one click. Go ahead, try it.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section certs">
+    <div class="certs-head">
+      <h2 class="h2 center">Security you can <em class="red">verify.</em></h2>
+      <p>Independent standards and audits stand behind every contract we review.</p>
+    </div>
+    <div class="badges" id="badges"></div>
+    <div class="badge-nav">
+      <button type="button" class="circle" data-bn="prev" aria-label="Previous certification"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#14161A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4L6 9l5 5"/></svg></button>
+      <div class="dots" data-bn="dots"></div>
+      <button type="button" class="circle circle-dark" data-bn="next" aria-label="Next certification"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4l5 5-5 5"/></svg></button>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-in">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-logo"><svg width="18" height="24" viewBox="0 0 14 18" aria-hidden="true"><path d="M9 0L0 10.5h5.5L4 18l10-11H8.2z" fill="#D7261E"/></svg>RedlineMD</span>
+        <p>Your AI companion for contract bureaucracy. Built for physicians, residents and fellows.</p>
+      </div>
+      <nav aria-label="Product"><span class="mono-label">PRODUCT</span><a href="#analysis">How it works</a><a href="#features">Pricing</a><a href="#sample">Sample report</a><a href="#security">Security</a></nav>
+      <nav aria-label="Company"><span class="mono-label">COMPANY</span><a href="#">About</a><a href="#">Careers</a><a href="#">Press</a><a href="#">Contact</a></nav>
+      <nav aria-label="Resources"><span class="mono-label">RESOURCES</span><a href="#">Contract checklist</a><a href="#">Salary guide</a><a href="#">Blog</a><a href="#">FAQ</a></nav>
+    </div>
+    <div class="socials">
+      <a href="#">LinkedIn <span aria-hidden="true">↗</span></a>
+      <a href="#">Instagram <span aria-hidden="true">↗</span></a>
+      <a href="#">YouTube <span aria-hidden="true">↗</span></a>
+      <a href="#">X <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 RedlineMD. All rights reserved.</p>
+      <div><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile sticky upload bar -->
+<div class="upload-bar" id="uploadBar" data-upload data-bar>
+  <input type="file" class="sr-file" accept=".pdf,.doc,.docx,application/pdf" tabindex="-1" aria-hidden="true">
+  <div class="bar-idle" data-step="idle">
+    <button type="button" class="btn btn-red btn-block" data-act="open">
+      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13V3M5.5 7.5L10 3l4.5 4.5M3.5 13v2.5a1.5 1.5 0 0 0 1.5 1.5h10a1.5 1.5 0 0 0 1.5-1.5V13"/></svg>
+      Upload your contract 
+    </button>
+    <span>PDF or Word · Encrypted on upload · Report in 24h</span>
+  </div>
+  <div class="up-panel sheet" data-step="file" hidden></div>
+  <div class="up-panel sheet" data-step="done" hidden></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
