@@ -186,6 +186,8 @@ section[id], div[id="upload"] { scroll-margin-top: calc(var(--header-h) + 8px); 
 .story-who { display: flex; align-items: center; gap: 8px; font-size: 12px; color: rgba(255, 255, 255, .85); }
 .story-who::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--red); flex-shrink: 0; }
 
+.stories-note { margin: -24px 0 0; font-size: 12px; color: #9A9A9A; text-align: center; }
+
 /* Sample */
 .sample { padding: 24px 24px 88px; }
 .sample-card { width: 100%; max-width: 1000px; background: #fff; border: 1px solid var(--line); border-radius: 28px; padding: 56px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px; }

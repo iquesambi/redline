@@ -272,10 +272,10 @@
   (function () {
     var wrap = $('#stories');
     var defs = [
-      { len: 18, off: 3, bg: 'linear-gradient(170deg, #CFE0DE 0%, #7FA3A0 100%)', skin: '#C99A7B', hair: '#2E2420', scrub: '#2B5F5E', quote: 'The tail coverage clause alone would have cost me thousands when I left.', name: 'Emergency medicine · Texas' },
-      { len: 24, off: 11, bg: 'linear-gradient(170deg, #E8DCCB 0%, #B49A7C 100%)', skin: '#8D5B3E', hair: '#1B1412', scrub: '#3B5C87', quote: 'I had no idea my signing bonus came with a repayment trap.', name: 'Pediatrics · Ohio' },
-      { len: 15, off: 7, bg: 'linear-gradient(170deg, #D9DCE6 0%, #8A93AA 100%)', skin: '#E3B796', hair: '#8A5A32', scrub: '#4A7A5E', quote: '24 hours later I had the redlines and the exact words to ask for.', name: 'Family medicine · California' },
-      { len: 21, off: 0, bg: 'linear-gradient(170deg, #E6D6D3 0%, #A9817A 100%)', skin: '#B07D5B', hair: '#3A2A22', scrub: '#6B4E7A', quote: 'They caught unpaid call hours buried on page 14.', name: 'Anesthesiology · Florida' }
+      { len: 18, off: 3, img: 'assets/doctor-1.jpg', bg: 'linear-gradient(170deg, #CFE0DE 0%, #7FA3A0 100%)', skin: '#C99A7B', hair: '#2E2420', scrub: '#2B5F5E', quote: 'The tail coverage clause alone would have cost me thousands when I left.', name: 'Emergency medicine · Texas' },
+      { len: 24, off: 11, img: 'assets/doctor-2.jpg', bg: 'linear-gradient(170deg, #E8DCCB 0%, #B49A7C 100%)', skin: '#8D5B3E', hair: '#1B1412', scrub: '#3B5C87', quote: 'I had no idea my signing bonus came with a repayment trap.', name: 'Pediatrics · Ohio' },
+      { len: 15, off: 7, img: 'assets/doctor-1.jpg', bg: 'linear-gradient(170deg, #D9DCE6 0%, #8A93AA 100%)', skin: '#E3B796', hair: '#8A5A32', scrub: '#4A7A5E', quote: '24 hours later I had the redlines and the exact words to ask for.', name: 'Family medicine · California' },
+      { len: 21, off: 0, img: 'assets/doctor-2.jpg', bg: 'linear-gradient(170deg, #E6D6D3 0%, #A9817A 100%)', skin: '#B07D5B', hair: '#3A2A22', scrub: '#6B4E7A', quote: 'They caught unpaid call hours buried on page 14.', name: 'Anesthesiology · Florida' }
     ];
     var bars = [], btns = [];
     defs.forEach(function (d, i) {
@@ -285,7 +285,7 @@
       b.setAttribute('aria-pressed', 'false');
       b.setAttribute('aria-label', 'Play testimonial ' + (i + 1) + ' with sound');
       b.innerHTML =
-        '<svg class="person" viewBox="0 0 90 160" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><circle cx="45" cy="58" r="17" fill="' + d.skin + '"/><path d="M45 34c-12 0-19 9-18 20 3-6 9-9 18-9s15 3 18 9c1-11-6-20-18-20z" fill="' + d.hair + '"/><path d="M8 160c0-30 15-48 37-48s37 18 37 48z" fill="#F4F4F2"/><path d="M45 112l-9 3 9 20 9-20z" fill="' + d.scrub + '"/><path d="M22 125c4 14 4 26 3 35M68 125c-4 14-4 26-3 35" fill="none" stroke="#2F2F2F" stroke-width="1.6" stroke-linecap="round"/><circle cx="25" cy="148" r="3.5" fill="none" stroke="#2F2F2F" stroke-width="1.6"/></svg>' +
+        '<img class="person-img" src="' + d.img + '" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%">' +
         '<div class="story-prog"><div></div></div>' +
         '<span class="story-pill"><svg class="off-only" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h3l4-3.5v12l-4-3.5h-3z"/><path d="M12.5 7l4 4M16.5 7l-4 4"/></svg>' +
         '<svg class="on-only" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h3l4-3.5v12l-4-3.5h-3z"/><path d="M12.5 6.2a4 4 0 0 1 0 5.6M14.6 4.2a7 7 0 0 1 0 9.6"/></svg><span class="on-only">Sound on</span></span>' +
